@@ -45,7 +45,7 @@ def consumer():
 
 def subscriber():
 
-    channel_name = 'channel_name'
+    channel_name = 'report_tokens'
     print(f'Waiting for messages on channel: "{channel_name}"...')
     pubsub = mq.pubsub()
     pubsub.subscribe(channel_name)
@@ -57,8 +57,8 @@ def subscriber():
 
 if __name__ == '__main__':
     try:
-        consumer()
-        # subscriber()
+        # consumer()
+        subscriber()
     except KeyboardInterrupt:
         print('\nexiting')
         exit(0)
