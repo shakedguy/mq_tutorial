@@ -5,7 +5,7 @@
 	"type": "module",
 	"main": "consumer.js",
 	"scripts": {
-		"producer": "nodemon consumer.js",
+		"producer": "nodemon producer.js",
 		"consumer": "nodemon consumer.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -16,8 +16,8 @@
 		"nodemon": "^2.0.21"
 	},
 	"dependencies": {
+		"bullmq": "^4.14.4",
 		"dotenv": "^16.0.3",
-		"ioredis": "^5.3.1",
 		"redis": "^4.6.5"
 	}
 }
